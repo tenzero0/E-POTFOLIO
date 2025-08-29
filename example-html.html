@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -627,4 +628,319 @@
   </script>
 </body>
 >>>>>>> f1f856ddc8e1e1f36317e32c363fe0d7d1a575d7
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Examples - Suyog Parajuli</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">
+        <i class="fab fa-html5"></i>
+      </div>
+      Suyog Parajuli <span>| Full Stack Dev</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Main page.html">Home</a></li>
+      <li><a href="fullstacks.html">Full Stack</a></li>
+      <li><a href="example-html.html" class="active">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="html-logo">
+        <i class="fab fa-html5"></i>
+      </div>
+      <h1>HTML Showcase</h1>
+      <p>Clean structure, semantic elements, and modern layouts</p>
+      <div class="hero-buttons">
+        <a href="#semantic" class="btn">Semantic HTML</a>
+        <a href="#compiler" class="btn">Try Compiler</a>
+        <a href="#examples" class="btn">More Examples</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="semantic">
+      <h2><i class="fas fa-code"></i> Semantic HTML Layout</h2>
+      <p>Semantic HTML introduces meaning to the web page rather than just presentation. It helps with SEO and accessibility.</p>
+      <div class="code-container">
+        <pre>
+&lt;header&gt;
+  &lt;h1&gt;My Portfolio&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section id="about"&gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;article&gt;
+      &lt;p&gt;I'm a web developer passionate about creating accessible websites.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+  
+  &lt;section id="projects"&gt;
+    &lt;h2&gt;Projects&lt;/h2&gt;
+    &lt;article&gt;
+      &lt;h3&gt;E-commerce Site&lt;/h3&gt;
+      &lt;p&gt;Built with HTML, CSS, and JavaScript.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;© 2025 My Portfolio&lt;/p&gt;
+  &lt;address&gt;
+    Contact me at &lt;a href="mailto:example@email.com"&gt;example@email.com&lt;/a&gt;
+  &lt;/address&gt;
+&lt;/footer&gt;
+        </pre>
+      </div>
+    </section>
+
+    <section id="examples">
+      <h2><i class="fas fa-laptop-code"></i> Modern HTML Examples</h2>
+      
+      <div class="example-grid">
+        <div class="example-card">
+          <div class="example-icon">
+            <i class="fas fa-table"></i>
+          </div>
+          <h3>Responsive Table</h3>
+          <div class="code-container">
+            <pre>
+&lt;div class="table-container"&gt;
+  &lt;table&gt;
+    &lt;caption&gt;Employee Details&lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;Name&lt;/th&gt;
+        &lt;th scope="col"&gt;Department&lt;/th&gt;
+        &lt;th scope="col"&gt;Salary&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td data-label="Name"&gt;John Doe&lt;/td&gt;
+        &lt;td data-label="Department"&gt;Engineering&lt;/td&gt;
+        &lt;td data-label="Salary"&gt;$85,000&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="example-icon">
+            <i class="fas fa-form"></i>
+          </div>
+          <h3>Modern Form</h3>
+          <div class="code-container">
+            <pre>
+&lt;form class="modern-form"&gt;
+  &lt;div class="input-group"&gt;
+    &lt;label for="email"&gt;Email Address&lt;/label&gt;
+    &lt;input type="email" id="email" 
+           placeholder="Enter your email" 
+           required&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="input-group"&gt;
+    &lt;label for="password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="password" 
+           placeholder="Enter your password" 
+           minlength="8" required&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="input-group"&gt;
+    &lt;label for="message"&gt;Message&lt;/label&gt;
+    &lt;textarea id="message" 
+              placeholder="Your message..." 
+              rows="4"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  
+  &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+          </div>
+        </div>
+
+        <div class="example-card">
+          <div class="example-icon">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3>Responsive Images</h3>
+          <div class="code-container">
+            <pre>
+&lt;picture&gt;
+  &lt;source media="(min-width: 1200px)" 
+          srcset="large.jpg"&gt;
+  &lt;source media="(min-width: 768px)" 
+          srcset="medium.jpg"&gt;
+  &lt;img src="small.jpg" 
+       alt="Descriptive alt text" 
+       class="responsive-img"&gt;
+&lt;/picture&gt;
+
+&lt;figure&gt;
+  &lt;img src="image.jpg" alt="Artwork"&gt;
+  &lt;figcaption&gt;Beautiful landscape artwork&lt;/figcaption&gt;
+&lt;/figure&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compiler">
+      <h2><i class="fas fa-play-circle"></i> HTML Code Compiler</h2>
+      <p>Write your HTML code in the editor and see the live preview.</p>
+      
+      <div class="compiler-container">
+        <div class="code-editor">
+          <div class="editor-header">
+            <span>HTML Editor</span>
+            <button id="run-btn" class="run-button">
+              <i class="fas fa-play"></i> Run
+            </button>
+          </div>
+          <textarea id="html-code" placeholder="Write your HTML code here...">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 { color: #2c3e50; }
+    .container { 
+      max-width: 800px; 
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, World!</h1>
+    <p>This is a sample HTML page.</p>
+    <p>Edit this code and click Run to see changes.</p>
+  </div>
+</body>
+</html>
+          </textarea>
+        </div>
+        
+        <div class="preview-pane">
+          <div class="preview-header">
+            <span>Live Preview</span>
+          </div>
+          <iframe id="preview-frame"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2><i class="fas fa-book-open"></i> HTML Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <h3>Official Documentation</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a></li>
+            <li><a href="https://www.w3.org/TR/html52/" target="_blank">W3C HTML 5.2</a></li>
+          </ul>
+        </div>
+        
+        <div class="resource-card">
+          <h3>Learning Platforms</h3>
+          <ul>
+            <li><a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy</a></li>
+            <li><a href="https://web.dev/learn/html/" target="_blank">Web.dev</a></li>
+          </ul>
+        </div>
+        
+        <div class="resource-card">
+          <h3>Tools & References</h3>
+          <ul>
+            <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+            <li><a href="https://caniuse.com/" target="_blank">Can I Use</a></li>
+            <li><a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Suyog Parajuli | Full Stack ePortfolio</p>
+      <div class="social-links">
+        <a href="https://github.com/tenzero0"><i class="fab fa-github"></i></a>
+       
+        <a href="bwit24b.syg@ismt.edu.np"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Code compiler functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const runButton = document.getElementById('run-btn');
+      const htmlCode = document.getElementById('html-code');
+      const previewFrame = document.getElementById('preview-frame');
+      
+      function runCode() {
+        const code = htmlCode.value;
+        const preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+        
+        preview.open();
+        preview.write(code);
+        preview.close();
+      }
+      
+      runButton.addEventListener('click', runCode);
+      
+      // Run code initially
+      setTimeout(runCode, 100);
+      
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+>>>>>>> 332aedc3a023ce981a285b0152979eb2f903c6d9
 </html>
