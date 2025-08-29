@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Power - Suyog Parajuli</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Suyog Parajuli <span>| Full Stack Dev</span></div>
+    <ul class="nav-links">
+      <li><a href="Main page.html">Home</a></li>
+      <li><a href="fullstacks.html">Full Stack</a></li>
+      <li><a href="example-html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
+      <li><a href="javascript.html" class="active">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="js-logo">
+        <i class="fab fa-js-square"></i>
+      </div>
+      <h1>JavaScript <span class="gradient-text">Power</span></h1>
+      <p>Interactive, dynamic, and next-level scripts that bring your web projects to life</p>
+      <div class="hero-buttons">
+        <a href="#examples" class="btn">Explore Examples</a>
+        <a href="#playground" class="btn btn-outline">Try Live Editor</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2><i class="fas fa-bolt"></i> Why JavaScript Matters</h2>
+      <p>JavaScript is the programming language of the web. It enables dynamic content, interactive experiences, and complex web applications. Modern JavaScript (ES6+) brings powerful features that make development more efficient and enjoyable.</p>
+      
+      <div class="tech-icons" style="justify-content: center; margin: 2rem 0;">
+        <div class="tech-icon">
+          <i class="fab fa-js-square"></i>
+          <span>ES6+</span>
+        </div>
+        <div class="tech-icon">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-icon">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="tech-icon">
+          <i class="fab fa-vuejs"></i>
+          <span>Vue.js</span>
+        </div>
+        <div class="tech-icon">
+          <i class="fab fa-angular"></i>
+          <span>Angular</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples">
+      <h2><i class="fas fa-code"></i> JavaScript Examples</h2>
+      <p>Explore these interactive examples to see JavaScript in action. Click on any example to see the code and try it yourself.</p>
+      
+      <div class="example-grid">
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-keyboard"></i>
+          </div>
+          <h3>Typewriter Effect</h3>
+          <p>A classic typing animation that simulates someone typing text in real time.</p>
+          <button class="btn btn-small" onclick="showExample('typewriter')">View Example</button>
+        </div>
+        
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Counter App</h3>
+          <p>A simple counter with increment, decrement and reset functionality.</p>
+          <button class="btn btn-small" onclick="showExample('counter')">View Example</button>
+        </div>
+        
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Todo List</h3>
+          <p>Manage tasks with this interactive todo list with add, complete and delete features.</p>
+          <button class="btn btn-small" onclick="showExample('todo')">View Example</button>
+        </div>
+        
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Digital Clock</h3>
+          <p>A real-time digital clock that updates every second using JavaScript timing functions.</p>
+          <button class="btn btn-small" onclick="showExample('clock')">View Example</button>
+        </div>
+        
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3>Image Slider</h3>
+          <p>A responsive image carousel with navigation controls and automatic slideshow.</p>
+          <button class="btn btn-small" onclick="showExample('slider')">View Example</button>
+        </div>
+        
+        <div class="example-card hover-card">
+          <div class="example-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h3>Memory Game</h3>
+          <p>A classic card matching game that tests your memory with flipping cards.</p>
+          <button class="btn btn-small" onclick="showExample('memory')">View Example</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-example">
+      <h2><i class="fas fa-play-circle"></i> Live Example: <span id="example-title">Typewriter Effect</span></h2>
+      
+      <div class="live-example">
+        <div class="example-box" id="example-display">
+          <!-- Example will be displayed here -->
+          <p id="output" style="color:#00ffcc; font-weight: bold;"></p>
+        </div>
+        
+        <div class="code-container">
+          <button class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i> Copy Code</button>
+          <pre id="example-code"><code class="javascript">// Typewriter Effect
+const text = "Brutal JavaScript in Action...";
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("output").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+window.onload = typeWriter;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="playground">
+      <h2><i class="fas fa-laptop-code"></i> JavaScript Playground</h2>
+      <p>Experiment with JavaScript code in this live editor. Write your code and see the results instantly.</p>
+      
+      <div class="compiler-container">
+        <div class="code-editor">
+          <div class="editor-header">
+            <span><i class="fas fa-code"></i> JavaScript Editor</span>
+            <button class="run-button" onclick="runCode()"><i class="fas fa-play"></i> Run Code</button>
+          </div>
+          <textarea id="js-code" placeholder="Enter your JavaScript code here...">// Welcome to the JavaScript Playground!
+// Try writing some code and click "Run Code"
+
+function greet() {
+  const name = prompt("What's your name?");
+  if (name) {
+    document.getElementById("playground-output").innerHTML = 
+      `Hello, ${name}! Welcome to JavaScript Playground.`;
+  }
+}
+
+// Call the function
+greet();</textarea>
+        </div>
+        
+        <div class="preview-pane">
+          <div class="preview-header">
+            <span><i class="fas fa-play-circle"></i> Output</span>
+          </div>
+          <div id="playground-output" style="padding: 1rem; height: 400px; overflow-y: auto;">
+            Output will appear here...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="concepts">
+      <h2><i class="fas fa-lightbulb"></i> Key JavaScript Concepts</h2>
+      <p>Understanding these core concepts is essential for mastering JavaScript development.</p>
+      
+      <div class="workflow-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Variables & Data Types</h3>
+            <p>let, const, var, primitive types, objects, and type coercion.</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Functions & Scope</h3>
+            <p>Function declarations, expressions, arrow functions, and closure.</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>DOM Manipulation</h3>
+            <p>Selecting elements, modifying content, handling events, and dynamic styling.</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Async JavaScript</h3>
+            <p>Callbacks, promises, async/await, and fetching data from APIs.</p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>ES6+ Features</h3>
+            <p>Template literals, destructuring, spread/rest operators, and modules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2><i class="fas fa-book-open"></i> JavaScript Resources</h2>
+      <p>Expand your JavaScript knowledge with these excellent learning resources.</p>
+      
+      <div class="resources-grid">
+        <div class="resource-card hover-card">
+          <h3>Documentation</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fas fa-external-link-alt"></i> MDN JavaScript Guide</a></li>
+            <li><a href="https://javascript.info/" target="_blank"><i class="fas fa-external-link-alt"></i> Modern JavaScript Tutorial</a></li>
+            <li><a href="https://devdocs.io/javascript/" target="_blank"><i class="fas fa-external-link-alt"></i> DevDocs JavaScript</a></li>
+          </ul>
+        </div>
+        
+        <div class="resource-card hover-card">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li><a href="https://reactjs.org/" target="_blank"><i class="fab fa-react"></i> React</a></li>
+            <li><a href="https://vuejs.org/" target="_blank"><i class="fab fa-vuejs"></i> Vue.js</a></li>
+            <li><a href="https://angular.io/" target="_blank"><i class="fab fa-angular"></i> Angular</a></li>
+            <li><a href="https://nodejs.org/" target="_blank"><i class="fab fa-node-js"></i> Node.js</a></li>
+          </ul>
+        </div>
+        
+        <div class="resource-card hover-card">
+          <h3>Practice Platforms</h3>
+          <ul>
+            <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a></li>
+            <li><a href="https://codewars.com/" target="_blank"><i class="fas fa-code"></i> Codewars</a></li>
+            <li><a href="https://leetcode.com/" target="_blank"><i class="fas fa-laptop-code"></i> LeetCode</a></li>
+            <li><a href="https://jsfiddle.net/" target="_blank"><i class="fas fa-bolt"></i> JSFiddle</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Suyog Parajuli | Full Stack ePortfolio</p>
+      <div class="social-links">
+        <a href="https://github.com/tenzero0"><i class="fab fa-github"></i></a>
+         <a href="bwit24b.syg@ismt.edu.np"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize the typewriter effect
+    const text = "JavaScript is in Action...";
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("output").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+
+    // Run code in playground
+    function runCode() {
+      const code = document.getElementById("js-code").value;
+      const outputElement = document.getElementById("playground-output");
+      
+      try {
+        // Override console.log to output to our playground
+        const originalConsoleLog = console.log;
+        console.log = function(...args) {
+          originalConsoleLog.apply(console, args);
+          outputElement.innerHTML += args.join(' ') + '<br>';
+        };
+        
+        // Clear previous output
+        outputElement.innerHTML = '';
+        
+        // Execute the code
+        eval(code);
+        
+        // Restore original console.log
+        console.log = originalConsoleLog;
+      } catch (error) {
+        outputElement.innerHTML = `<span style="color: #ff6b6b;">Error: ${error.message}</span>`;
+      }
+    }
+
+    // Example data for different examples
+    const examples = {
+      typewriter: {
+        title: "Typewriter Effect",
+        code: `// Typewriter Effect
+const text = "Brutal JavaScript in Action...";
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("output").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+window.onload = typeWriter;`,
+        html: `<p id="output" style="color:#00ffcc; font-weight: bold;"></p>`
+      },
+      counter: {
+        title: "Counter App",
+        code: `// Counter Application
+let count = 0;
+
+function updateCounter() {
+  document.getElementById("counter-value").innerText = count;
+  document.getElementById("counter-value").style.color = count > 0 ? "#00ffcc" : count < 0 ? "#ff6b6b" : "#fff";
+}
+
+function increment() {
+  count++;
+  updateCounter();
+}
+
+function decrement() {
+  count--;
+  updateCounter();
+}
+
+function reset() {
+  count = 0;
+  updateCounter();
+}
+
+// Initialize
+updateCounter();`,
+        html: `<div style="text-align: center;">
+  <h2 style="margin-bottom: 1rem;">Counter: <span id="counter-value">0</span></h2>
+  <div style="display: flex; gap: 1rem; justify-content: center;">
+    <button onclick="decrement()" class="neon-btn">-</button>
+    <button onclick="reset()" class="neon-btn">Reset</button>
+    <button onclick="increment()" class="neon-btn">+</button>
+  </div>
+</div>`
+      },
+      todo: {
+        title: "Todo List",
+        code: `// Todo List Application
+let todos = [];
+
+function addTodo() {
+  const input = document.getElementById("todo-input");
+  const text = input.value.trim();
+  
+  if (text) {
+    todos.push({ text, completed: false });
+    input.value = "";
+    renderTodos();
+  }
+}
+
+function toggleTodo(index) {
+  todos[index].completed = !todos[index].completed;
+  renderTodos();
+}
+
+function deleteTodo(index) {
+  todos.splice(index, 1);
+  renderTodos();
+}
+
+function renderTodos() {
+  const list = document.getElementById("todo-list");
+  list.innerHTML = "";
+  
+  todos.forEach((todo, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = \`
+      <input type="checkbox" \${todo.completed ? "checked" : ""} onchange="toggleTodo(\${index})">
+      <span style="text-decoration: \${todo.completed ? "line-through" : "none"}">\${todo.text}</span>
+      <button onclick="deleteTodo(\${index})" style="margin-left: auto;">Delete</button>
+    \`;
+    li.style.display = "flex";
+    li.style.alignItems = "center";
+    li.style.gap = "1rem";
+    li.style.padding = "0.5rem";
+    li.style.borderBottom = "1px solid #333";
+    list.appendChild(li);
+  });
+}
+
+// Initialize
+renderTodos();`,
+        html: `<div>
+  <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+    <input type="text" id="todo-input" placeholder="Enter a new task" 
+           style="flex: 1; padding: 0.5rem; background: #1a1a1a; color: white; border: 1px solid #00ffcc; border-radius: 4px;">
+    <button onclick="addTodo()" class="neon-btn">Add</button>
+  </div>
+  <ul id="todo-list" style="list-style: none; padding: 0;"></ul>
+</div>`
+      },
+      clock: {
+        title: "Digital Clock",
+        code: `// Digital Clock
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+  document.getElementById("clock").textContent = \`\${hours}:\${minutes}:\${seconds}\`;
+}
+
+// Update clock every second
+setInterval(updateClock, 1000);
+updateClock();`,
+        html: `<div style="text-align: center;">
+  <h2 id="clock" style="font-size: 3rem; color: #00ffcc; text-shadow: 0 0 10px #00ffcc;">00:00:00</h2>
+  <p>Current Time</p>
+</div>`
+      }
+    };
+
+    // Show selected example
+    function showExample(exampleId) {
+      const example = examples[exampleId];
+      if (!example) return;
+      
+      document.getElementById("example-title").textContent = example.title;
+      document.getElementById("example-code").textContent = example.code;
+      document.getElementById("example-display").innerHTML = example.html;
+      
+      // Highlight code
+      document.querySelectorAll("code").forEach(block => {
+        block.innerHTML = block.innerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      });
+      
+      // Execute the example code
+      try {
+        eval(example.code);
+      } catch (error) {
+        console.error("Error executing example:", error);
+      }
+      
+      // Scroll to example section
+      document.getElementById("current-example").scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Copy code to clipboard
+    function copyCode() {
+      const code = document.getElementById("example-code").textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        // Show confirmation
+        const btn = document.querySelector(".copy-btn");
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+        }, 2000);
+      });
+    }
+
+    // Initialize page with typewriter example
+    window.onload = function() {
+      typeWriter();
+      showExample('typewriter');
+      
+      // Add syntax highlighting
+      document.querySelectorAll("code").forEach(block => {
+        block.innerHTML = block.innerHTML.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      });
+    }
+  </script>
+</body>
+</html>
